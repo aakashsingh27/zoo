@@ -6,7 +6,7 @@ const YourComponent = () => {
     try {
       // Make a GET request to the /authorize endpoint
 const response = await axios.get('https://node-project-rc3o.onrender.com/api/live/authorize');
-      
+          console.log(response);
       // Redirect the user to the Zoom authorization URL
       window.location.href = response.request.responseURL;
     } catch (error) {
